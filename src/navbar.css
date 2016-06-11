@@ -1,0 +1,102 @@
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background-color: #2d2d30;
+	opacity: 0.9;
+	padding-left: 100px;
+}
+
+.home-button {
+	position: absolute;
+	display: block;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100px;
+}
+
+.navbar-list {
+	float: right;
+}
+.navbar-list li {
+	display: inline-block;
+	height: 100%;
+}
+
+.navbar a {
+	line-height: 50px;
+	color: #d5d5d5;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	display: block;
+	padding: 0px 15px 0px 15px;
+	letter-spacing: 2px;
+	font-size: 14px;
+}
+
+/* On hover, the links will turn white */
+.navbar a:hover{
+	color: #fff;
+}
+
+/* Button icon size, color, and positioning */
+.navbar-dropdown-button {
+	height: 49px;
+	background-color: #2d2d30;
+	font-size: 150%;
+	color: #737373;
+	float: right;
+}
+
+/* Remove default blue border on button focus*/
+.navbar-dropdown-button:focus {
+	outline: none;
+}
+
+/* Button shape and size */
+.navbar-dropdown-button span {
+	border: 6px solid transparent;
+	padding: 0px 8px 0px 8px;
+	margin-right: 10px;
+	border-radius: 4px;
+}
+/* Button color change to light gray on hover*/
+.navbar-dropdown-button span:hover {
+	background-color: #d5d5d5;
+}
+
+.navbar-list-mobile {
+	position: absolute;
+	top: 50px;
+	left: 0px;
+	width: 100%;
+	background-color: rgba(45,45,48,0.8);
+	height: 0;
+	transition: height 150ms ease-out;
+	overflow: hidden;
+}
+
+.navbar-list-mobile-open {
+	height:100px;
+}
+
+
+@media screen and (max-width: 768px) {
+	.navbar-list{
+		display: none !important;
+	}
+
+}
+
+@media screen and (min-width: 769px) {
+
+	.navbar-dropdown-button {
+		display: none !important;
+	}
+	.navbar-list-mobile{
+		display: none !important;
+	}
+}
+
